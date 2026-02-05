@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Giriş</title>
+</head>
+<body>
+
+<h1>Bu site herkese açık değil 🍎</h1>
+
+<input type="password" id="password" placeholder="Şifre">
+
+<button onclick="kontrol()">Giriş Yap</button>
+
+<p id="uyari"></p>
+
+<script>
+function kontrol() {
+  var sifre = document.getElementById("password").value;
+  if (sifre === "123") {
+    window.location.href = "page2.html";
+  } else {
+    document.getElementById("uyari").innerText = "Şifre yanlış";
+  }
+}
+</script>
+
+</body>
+</html>
